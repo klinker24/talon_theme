@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2014 Luke Klinker
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!-- PLEASE READ:
+
+    This is basically the Hangouts layout that is contained in Talon.
+
+    This layout will work fine, but obviously since I am providing you the resource, you can change it literally however you want.
+    You do have to make sure you don't change any of the ID's or the remove any items though or you will cause force closes that I will
+    have to deal with :/ That is not what I want!
+
+    Pretty much you can do anything with this, I made a few comments throughout saying not to change this, or if you do
+    how the behavior should be. Please follow those simple guidelines so we can create the best experience. Pretty much just watch for visiblity on
+    the expansion. You can set any of the other items to gone or invisible to hide them though.
+
+    This is a very powerful tool that I have given here. Say you wanted to make a Falcon theme or something, you could do that pretty easily.
+    Just recreate the layout
+
+    So enjoy and make this into something very cool :)
+
+    And just an FYI, dimen values aren't going to work, for some reason, they can't be found from my app, don't know why.
+    So you will have to hardcode the values -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="5dp"> <!-- This padding is what you should change for your list views dividers. It can be zero. -->
+
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+
+        <!-- The tweeters picture -->
+        <!-- changing the width and height will change the size of the picture -->
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/profile_pic"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+
+    <!-- Tweet's Content -->
+    <!-- This margin is what you will want to change to get your picture to align correctly -->
+    <LinearLayout
+            android:id="@+id/background"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tweet_bubble"
+            android:layout_marginLeft="-10dp"
+        >
+
+        <!-- Holds the name, screen name, and time-->
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"/>
+            <TextView
+                    android:id="@+id/time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="11dp"
+                    android:maxLines="1"
+                    android:textStyle="italic"
+                    android:textColor="@color/dateColor"
+                    android:layout_toRightOf="@+id/name"
+                    android:layout_alignBaseline="@+id/name" />
+
+            <TextView
+                    android:id="@+id/tweet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/name"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/textColor"
+                    android:paddingBottom="10dp" />
+
+            <TextView
+                    android:id="@+id/retweeter"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:textSize="11dp"
+                    android:layout_below="@+id/tweet"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/dateColor"
+                    android:visibility="gone" />
+
+            <ImageView
+                       android:id="@+id/image"
+                       android:layout_below="@+id/retweeter"
+                       android:layout_height="96dp"
+                       android:layout_width="match_parent"
+                       android:scaleType="centerCrop"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginRight="8dp"
+                       android:layout_marginBottom="10dp"
+                       android:visibility="gone"
+                       />
+
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_below="@+id/retweeter"
+                android:layout_height="96dp"
+                android:layout_width="match_parent"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_action_play"
+                />
+
+        </RelativeLayout>
+
+        <!-- I am going to recommend that you don't change the bottom margin here. that negative is
+            used for the animation. But you may have to change it if you change the heights of the elements
+            in the layout. It should match those heights. Also, do not change the visibility here because it
+            will get messed up as I dynamically change it. -->
+        <LinearLayout
+                android:id="@+id/expansion"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:layout_marginBottom="-95dp"
+                android:visibility="gone">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dp"
+                    android:layout_gravity="center_vertical">
+
+                <ImageButton
+                        android:id="@+id/favorite"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_action_favorite_light"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/pressed_button"
+                        android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:layout_height="37dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/fav_count" />
+
+                <ImageButton
+                        android:id="@+id/retweet"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:src="@drawable/ic_action_retweet_light"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/pressed_button" />
+
+                <TextView
+                        android:layout_height="37dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textColor"
+                        android:id="@+id/retweet_count" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                <EditText
+                        android:id="@+id/reply"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/textColor"
+                        android:inputType="textMultiLine|textCapSentences"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                    <TextView
+                            android:layout_height="13dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="10dp"
+                            android:gravity="right"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/char_remaining" />
+
+                    <ImageButton
+                            android:id="@+id/reply_button"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:src="@drawable/ic_action_send_light"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/pressed_button" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

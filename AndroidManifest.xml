@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2014 Luke Klinker
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.klinker.android.talon_theme"
+          android:versionCode="1"
+          android:versionName="1.00">
+
+    <uses-sdk android:minSdkVersion="14"
+              android:targetSdkVersion="19"/>
+
+    <application
+            android:icon="@drawable/icon"
+            android:label="@string/app_name">
+
+        <!-- Specifies that this app is a Talon theme, do not change -->
+        <meta-data android:name="talon_theme"
+                   android:value="version1"/>
+
+        <!-- Can be true or false, true means that user pictures will be round -->
+        <!-- false means that contact pictures will be square-->
+        <meta-data android:name="talon_theme_round_contact_pictures"
+                   android:value="false" />
+
+        <!-- Needs to be a string resource that defines a color in hex, set the background color of the message screen -->
+        <meta-data android:name="talon_theme_background_color"
+                   android:value="@string/background_color" />
+
+        <!-- Can be light, dark, or black, which defines the base theme you are building off of -->
+        <meta-data android:name="talon_theme_base"
+                   android:value="light" />
+
+    </application>
+</manifest>

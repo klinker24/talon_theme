@@ -46,3 +46,24 @@ limitations under the License.
 
     </application>
 </manifest>
+
+    <!-- PLEASE READ (Some themeing instructions):
+
+    This is basically the Hangouts layout that is contained in Talon.
+
+    This layout will work fine, but obviously since I am providing you the resource, you can change it literally however you want.
+    You do have to make sure you don't change any of the ID's or the remove any items though or you will cause force closes that I will
+    have to deal with :/ That is not what I want!
+
+    Pretty much you can do anything with this, I made a few comments throughout saying not to change this, or if you do
+    how the behavior should be. Please follow those simple guidelines so we can create the best experience. Pretty much just watch for visiblity on
+    the expansion. You can set any of the other items to gone or invisible to hide them though.
+
+    This is a very powerful tool that I have given here. Say you wanted to make a Falcon theme or something, you could do that pretty easily.
+    Just recreate the layout
+
+    So enjoy and make this into something very cool :)
+
+    And just an FYI, dimen values aren't going to work, for some reason, they can't be found from my app, don't know why.
+    So you will have to hard-code all the values. Also, changing the font sizes will do no good, as i set them according to the user's
+    preference on the fly. -->

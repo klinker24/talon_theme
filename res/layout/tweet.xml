@@ -15,25 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<!-- PLEASE READ:
 
-    This is basically the Hangouts layout that is contained in Talon.
-
-    This layout will work fine, but obviously since I am providing you the resource, you can change it literally however you want.
-    You do have to make sure you don't change any of the ID's or the remove any items though or you will cause force closes that I will
-    have to deal with :/ That is not what I want!
-
-    Pretty much you can do anything with this, I made a few comments throughout saying not to change this, or if you do
-    how the behavior should be. Please follow those simple guidelines so we can create the best experience. Pretty much just watch for visiblity on
-    the expansion. You can set any of the other items to gone or invisible to hide them though.
-
-    This is a very powerful tool that I have given here. Say you wanted to make a Falcon theme or something, you could do that pretty easily.
-    Just recreate the layout
-
-    So enjoy and make this into something very cool :)
-
-    And just an FYI, dimen values aren't going to work, for some reason, they can't be found from my app, don't know why.
-    So you will have to hardcode the values -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="horizontal"
               android:layout_width="match_parent"
@@ -58,15 +40,14 @@ limitations under the License.
         </LinearLayout>
 
     <!-- Tweet's Content -->
-    <!-- This margin is what you will want to change to get your picture to align correctly -->
+    <!-- This margin left is what you will want to change to get your picture to align correctly -->
     <LinearLayout
             android:id="@+id/background"
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/tweet_bubble"
-            android:layout_marginLeft="-10dp"
-        >
+            android:layout_marginLeft="-10dp" >
 
         <!-- Holds the name, screen name, and time-->
         <RelativeLayout
@@ -74,14 +55,16 @@ limitations under the License.
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
 
+            <!-- somthing you may want to try here is setting the android:fontFamily="sans-serif-light"
+                this will give you the holo light font that Talon uses by default. But it is up to you-->
             <TextView
                     android:id="@+id/name"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:textStyle="bold"
-                    android:textSize="18dp"
                     android:textColor="@color/textColor"
                     android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-light"
                     android:layout_marginLeft="8dp"/>
             <TextView
                     android:id="@+id/time"
@@ -89,7 +72,6 @@ limitations under the License.
                     android:layout_width="wrap_content"
                     android:layout_marginRight="2dp"
                     android:layout_marginStart="5dp"
-                    android:textSize="11dp"
                     android:maxLines="1"
                     android:textStyle="italic"
                     android:textColor="@color/dateColor"
@@ -100,7 +82,6 @@ limitations under the License.
                     android:id="@+id/tweet"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:textSize="14dp"
                     android:layout_below="@+id/name"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp"
@@ -130,8 +111,9 @@ limitations under the License.
                        android:layout_marginRight="8dp"
                        android:layout_marginBottom="10dp"
                        android:visibility="gone"
-                       />
+                       /> <!-- don't change the visibility here. I do it myself in the code -->
 
+            <!-- I would leave this pretty much as is. It is the play button that is overlayed for youtube -->
             <ImageView
                 android:id="@+id/play_button"
                 android:layout_below="@+id/retweeter"
@@ -143,7 +125,7 @@ limitations under the License.
                 android:layout_marginBottom="10dp"
                 android:visibility="gone"
                 android:src="@drawable/ic_action_play"
-                />
+                /> <!-- I change the visibility dynamically, so don't change it -->
 
         </RelativeLayout>
 
@@ -211,6 +193,7 @@ limitations under the License.
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom">
 
+                <!-- This is the reply bar -->
                 <EditText
                         android:id="@+id/reply"
                         android:layout_height="50dp"
@@ -220,6 +203,7 @@ limitations under the License.
                         android:textColor="@color/textColor"
                         android:inputType="textMultiLine|textCapSentences"/>
 
+                <!-- This one holds the send button and the character counter -->
                 <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="wrap_content"

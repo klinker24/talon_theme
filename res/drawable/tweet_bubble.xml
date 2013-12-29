@@ -17,6 +17,11 @@ limitations under the License.
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- This just sets the different stats of the bubble, when it is pressed and not. You should keep the
+         same naming conventions that I have when you design your own.
+
+         Please do make different 9-patches for pressed and unpressed though, because users always want feedback
+         for their touches -->
     <item android:state_pressed="true" android:drawable="@drawable/tweet_background_selected"/>
     <item android:state_selected="true" android:drawable="@drawable/tweet_background_selected"/>
     <item android:drawable="@drawable/tweet_background"/>

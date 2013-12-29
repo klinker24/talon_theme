@@ -17,6 +17,10 @@ limitations under the License.
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- sets the background color when a button is pressed.
+         This will only change the buttons that you have in layouts here. NOT all of them in the app
+         keep that in mind before making a dramatic change -->
+
     <item android:drawable="@color/pressed_app_color"
           android:state_pressed="true"/>
 

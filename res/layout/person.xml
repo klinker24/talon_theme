@@ -15,9 +15,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<!-- Please read the disclaimer before the tweet xml file before diving in here :) -->
+<!-- This XML is used anywhere a user is shown, such as in the favorite users activity or
+    when searching for a user in the compose activity -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/background"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,7 +40,7 @@ limitations under the License.
 
     </LinearLayout>
 
-    <!-- Tweet's Content -->
+    <!-- Bubble Content -->
     <LinearLayout
         android:id="@+id/background"
         android:orientation="vertical"

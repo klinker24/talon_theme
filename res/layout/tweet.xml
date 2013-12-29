@@ -15,7 +15,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
+<!--
 
+This is the tweet that is displayed on your different timelines and profiles. The most used
+layout in the app I'm sure, so it should be clean and easy for a user to understand.
+
+I really like to make things stick out with bold and such, but it is up to you how to do it.
+Remember that you have lots of color choices for the fonts too. Any hexadecimal color will work,
+you can define more in the colors xml file or just hard-code them into here
+
+ -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="horizontal"
               android:layout_width="match_parent"

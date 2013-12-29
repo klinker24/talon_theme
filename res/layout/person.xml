@@ -15,8 +15,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<!-- This XML is used anywhere a user is shown, such as in the favorite users activity or
-    when searching for a user in the compose activity -->
+<!--
+
+This XML is used anywhere a user is shown, such as in the favorite users activity or
+when searching for a user in the compose activity
+
+ -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"

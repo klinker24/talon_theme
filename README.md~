@@ -4,19 +4,22 @@ This theme is just an example of what you can do with the theme engine for Talon
 
 <p>Steps to creating a custom Talon theme:</p>
 <ol>
-<li>Rename the package name in the AndroidManifest.xml file to whatever you want, it just needs to be different from what I have and what others have done, you can't install the same package multiple times on a device</li>
+<li>Rename the package name in the AndroidManifest.xml file to whatever you want, it just needs to be different from what I have and what others have done, you can't install the same package multiple times on a device (common practice is something like com.lastname.android.talon_theme_name)</li>
 <li>Edit each of the meta-data attributes defined in the AndroidManifest.xml to whatever you want for your theme, any combination of any of them should work fine</li>
-<li>Change the icon.png file to whatever you want in each of the drawable folders (mdpi, hdpi, xhdpi and xxhdpi)</li>
-<li>Add nine-patch resources for the different background types that you want to be shown for the message bubbles. For example, here is where you would put the iOS message bubbles if you were making an iOS theme</li>
-<li>Edit the message layout xml file to match how you want the padding on your message item to look, ect.</li>
+<li>Change the icon.png file to whatever you want in each of the drawable folders (mdpi, hdpi, xhdpi and xxhdpi). It will show up when selecting the themes in Talon</li>
+<li>Add nine-patch resources for the different background types (selected and unselected) and any other icons that you wish to change</li>
+<li>Edit the tweet layout xml file to match how you want it to look. You can basically do whatever you want here as long as you don't remove any of the components I have.</li>
+<li>Edit the person layout and the user header layout if you want.</li>
 <li>Edit the text colors defined in the colors resource file</li>
 <li>Compile the app and install it on your phone</li>
-<li>Set the theme in the Theme Settings section of EvolveSMS near the bottom</li>
+<li>Set the theme in the Theme Settings section of Talon</li>
 <li>Fix any problems with the theme and make it look perfect</li>
-<li>Put it up on the Google+ community for everyone to enjoy! https://plus.google.com/communities/101722781061844311332/stream/e88cabc6-1e5d-4fc3-8059-ed8d56d8ec20</li>
+<li>Put it up on the Google+ community for everyone to enjoy! https://plus.google.com/u/0/communities/112468199526946242218/stream/c2f77fd2-23f2-4cb5-923e-6bb748fbcb69</li>
 </ol>
 
 <p>For information on creating 9-patch files: http://radleymarx.com/blog/simple-guide-to-9-patch/</p>
+
+<p>Pretty much anything can be done with these themes. For now, these are the only elements that are possible to change and it may stay that way. This contains most of the main parts of the app, but I had conflicts when I attempted to add other parts, such as the tweet viewer activity, that I couldn't resolve.</p>
 
 ---
 

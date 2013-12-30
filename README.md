@@ -4,11 +4,12 @@ This theme is just an example of what you can do with the theme engine for Talon
 
 <p>Steps to creating a custom Talon theme:</p>
 <ol>
-<li>Rename the package name in the AndroidManifest.xml file to whatever you want, it just needs to be different from what I have and what others have done, you can't install the same package multiple times on a device</li>
+<li>Rename the package name in the AndroidManifest.xml file to whatever you want, it just needs to be different from what I have and what others have done, you can't install the same package multiple times on a device (common practice is something like com.lastname.android.talon_theme_name)</li>
 <li>Edit each of the meta-data attributes defined in the AndroidManifest.xml to whatever you want for your theme, any combination of any of them should work fine</li>
-<li>Change the icon.png file to whatever you want in each of the drawable folders (mdpi, hdpi, xhdpi and xxhdpi)</li>
-<li>Add nine-patch resources for the different background types (selected and unselected)</li>
+<li>Change the icon.png file to whatever you want in each of the drawable folders (mdpi, hdpi, xhdpi and xxhdpi). It will show up when selecting the themes in Talon</li>
+<li>Add nine-patch resources for the different background types (selected and unselected) and any other icons that you wish to change</li>
 <li>Edit the tweet layout xml file to match how you want it to look. You can basically do whatever you want here as long as you don't remove any of the components I have.</li>
+<li>Edit the person layout and the user header layout if you want.</li>
 <li>Edit the text colors defined in the colors resource file</li>
 <li>Compile the app and install it on your phone</li>
 <li>Set the theme in the Theme Settings section of Talon</li>
@@ -17,6 +18,8 @@ This theme is just an example of what you can do with the theme engine for Talon
 </ol>
 
 <p>For information on creating 9-patch files: http://radleymarx.com/blog/simple-guide-to-9-patch/</p>
+
+<p>Pretty much anything can be done with these themes. For now, these are the only elements that are possible to change and it may stay that way. This contains most of the main parts of the app, but I had conflicts when I attempted to add other parts, such as the tweet viewer activity, that I couldn't resolve.</p>
 
 ---
 

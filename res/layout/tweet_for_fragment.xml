@@ -28,7 +28,8 @@ will work the exact same
                 android:layout_width="fill_parent"
                 android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
-                android:paddingBottom="15dp" />
+                android:paddingBottom="15dp"
+                android:textColor="@color/textColor"/>
 
         <TextView
                 android:id="@+id/time"
@@ -82,7 +83,8 @@ will work the exact same
                     android:layout_height="37dp"
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="3dp"
-                    android:id="@+id/fav_count" />
+                    android:id="@+id/fav_count"
+                    android:textColor="@color/dateColor"/>
 
             <ImageButton
                     android:id="@+id/retweet"
@@ -99,7 +101,8 @@ will work the exact same
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:gravity="center_vertical"
-                    android:id="@+id/retweet_count" />
+                    android:id="@+id/retweet_count"
+                    android:textColor="@color/dateColor" />
 
         </LinearLayout>
 

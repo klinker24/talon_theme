@@ -158,6 +158,8 @@ REMOVE IT FROM THE PROJECT. This can be done by simply right clicking and select
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_gravity="bottom"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/dateColor"
             android:inputType="textMultiLine|textCapSentences"/>
 
         <LinearLayout
@@ -165,11 +167,14 @@ REMOVE IT FROM THE PROJECT. This can be done by simply right clicking and select
             android:layout_width="48dp"
             android:layout_height="wrap_content">
 
+            <!-- make sure the text fits correctly. I don't change the text size in code here -->
             <TextView
                 android:layout_height="13dp"
                 android:layout_width="match_parent"
                 android:gravity="center_horizontal"
-                android:id="@+id/char_remaining" />
+                android:id="@+id/char_remaining"
+                android:textSize="11dp"
+                android:textColor="@color/textColor"/>
 
             <ImageButton
                 android:id="@+id/reply_button"

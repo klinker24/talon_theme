@@ -21,6 +21,8 @@ This theme is just an example of what you can do with the theme engine for Talon
 
 <p>Pretty much anything can be done with these themes. For now, these are the only elements that are possible to change and it may stay that way. This contains most of the main parts of the app, but I had conflicts when I attempted to add other parts, such as the tweet viewer activity, that I couldn't resolve.</p>
 
+<p>You will NOT be able to configure the app's accent color with this theme engine. That isn't something that I can read from a package and place into the app on the fly. So, please, <b>DO NOT</b> ask me about this. The answer will be no and I am not afraid to tell you that, even if you don't like my answer. You have been warned!</p>
+
 ---
 
 Don't hesitate to contact me if you have any questions!

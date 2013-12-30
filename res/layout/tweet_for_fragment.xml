@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+This is one of the layouts contained in the "tweet_fragment" xml
+
+This one holds the actual tweet information.
+
+NOTE: Change it how you want, you don't actually have to keep it in a separate xml file if it makes more sense without.
+I just do it this way to organize better. As long as you have the same elements and ID's in the tweet_fragment xml, it
+will work the exact same
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/background"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tweet"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="15dp" />
+
+        <TextView
+                android:id="@+id/time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="8dp"
+                android:textStyle="italic"
+                android:layout_below="@id/tweet"
+                android:textColor="@color/dateColor"  />
+
+        <TextView
+                android:id="@+id/retweeter"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/time"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="15dp"
+                android:textStyle="italic"
+                android:textColor="@color/dateColor"
+                android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/expansion"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="3dp" >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:layout_gravity="center_vertical">
+
+            <ImageButton
+                    android:id="@+id/favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_action_favorite_light"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/pressed_button"
+                    android:layout_marginLeft="5dp" />
+
+            <TextView
+                    android:layout_height="37dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/fav_count" />
+
+            <ImageButton
+                    android:id="@+id/retweet"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:src="@drawable/ic_action_retweet_light"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/pressed_button" />
+
+            <TextView
+                    android:layout_height="37dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/retweet_count" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -50,7 +50,7 @@ when searching for a user in the compose activity
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/tweet_bubble"
+        android:background="@drawable/no_dialog_unselected"
         android:layout_marginLeft="-10dp">
 
         <!-- Holds the name and screen name-->

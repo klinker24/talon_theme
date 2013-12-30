@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+This is one of the layouts included inside the "tweet_fragment" xml layout.
+
+it is referenced there with a <include layout="@layout/contact_info"
+                                    ... />
+
+
+NOTE: Change it how you want, you don't actually have to keep it in a separate xml file if it makes more sense without.
+I just do it this way to organize better. As long as you have the same elements and ID's in the tweet_fragment xml, it
+will work the exact same
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+    <!-- this is nested here so that it can be centered horizontally -->
+    <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pro_pic_layout"
+            android:gravity="center_vertical">
+
+            <!-- this is the actual profile image -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/profile_pic"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+
+        <!-- this linear layout holds the name and screenname of the user.
+             I suppose that either of them could be set to visibility "gone" if that is the style you choose -->
+        <LinearLayout
+                      android:layout_toRightOf="@+id/pro_pic_layout"
+                      android:layout_alignTop="@+id/pro_pic_layout"
+                      android:orientation="vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:layout_marginTop="4dp"
+                      android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                    android:id="@+id/screen_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/dateColor"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

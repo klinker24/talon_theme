@@ -26,4 +26,7 @@ limitations under the License.
     <!-- the color of the buttons when pressed. This will only be applied to the retweet, favorite, and send buttons -->
     <color name="pressed_app_color">#77FF8800</color>
 
+    <!-- the background color will also be defined here so that you can use it in your layouts if you want -->
+    <color name="background_color">#dddddd</color>
+
 </resources>

@@ -40,6 +40,12 @@ limitations under the License.
         <meta-data android:name="talon_theme_background_color"
                    android:value="@string/background_color" />
 
+        <!-- Controls the background image in the user profiles. -->
+        <!-- True means that it will have the Google+ "contracting" effect when you scroll down the list -->
+        <!-- If false, it will keep a static size -->
+        <meta-data android:name="talon_theme_contracting_user_backgrounds"
+                   android:value="true" />
+
         <!-- Can be light, dark, or black, which defines the base theme you are building off of -->
         <meta-data android:name="talon_theme_base"
                    android:value="light" />

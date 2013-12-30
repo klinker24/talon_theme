@@ -94,6 +94,7 @@ you can define more in the colors xml file or just hard-code them into here
                     android:layout_below="@+id/name"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp"
+                    android:fontFamily="sans-serif-light"
                     android:textColor="@color/textColor"
                     android:paddingBottom="10dp" />
 

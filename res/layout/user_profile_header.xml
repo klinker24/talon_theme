@@ -13,6 +13,8 @@ so that it translates correctly. They are just in there now as placeholders.
               android:layout_height="match_parent"
               android:id="@+id/header" >
 
+    <!-- this is the background image that will be effected if you change the
+         meta-data for the constricting effect -->
     <ImageView
         android:id="@+id/background_image"
         android:layout_height="140dp"
@@ -22,6 +24,9 @@ so that it translates correctly. They are just in there now as placeholders.
         android:layout_marginTop="-5dp"
         />
 
+    <!-- if you are have the constricting effect, i would highly suggest you keep the
+         background color or the image will fall below and you will just have a weird style...
+         maybe you can use that for something though? -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,6 +53,7 @@ so that it translates correctly. They are just in there now as placeholders.
             android:gravity="center"
             android:textColor="@color/textColor"/>
 
+        <!-- these are the buttons. their text will be change on the fly, so it doesn't matter what they say here -->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -93,7 +99,7 @@ so that it translates correctly. They are just in there now as placeholders.
 
     </LinearLayout>
 
-    <!-- was a networked one -->
+    <!-- here is the profile picture -->
     <ImageView
         android:layout_width="96dp"
         android:layout_height="96dp"
@@ -105,6 +111,9 @@ so that it translates correctly. They are just in there now as placeholders.
         android:layout_marginRight="15dp"
         android:layout_marginTop="-70dp" />
 
+    <!-- you could maybe set this to be the actual bar instead of the spinner.
+         in code i just make it indeterminate, so i suppose it would work. Experiment with it
+         right now it is just right on top of the profile picture -->
     <ProgressBar
         android:layout_width="96dp"
         android:layout_height="96dp"

@@ -44,7 +44,7 @@ limitations under the License.
         <!-- True means that it will have the Google+ "contracting" effect when you scroll down the list -->
         <!-- If false, it will keep a static size -->
         <meta-data android:name="talon_theme_contracting_user_backgrounds"
-                   android:value="true" />
+                   android:value="false" />
 
         <!-- Can be light, dark, or black, which defines the base theme you are building off of -->
         <meta-data android:name="talon_theme_base"

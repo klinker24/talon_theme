@@ -126,8 +126,8 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
         android:layout_marginTop="-70dp" />
 
     <!-- you could maybe set this to be the actual bar instead of the spinner.
-         in code i just make it indeterminate, so i suppose it would work. Experiment with it
-         right now it is just right on top of the profile picture -->
+         in code I just make it indeterminate, so I suppose it would work. Experiment with it.
+         Right here it is just right on top of the profile picture. Don't mess with the visibility though -->
     <ProgressBar
         android:layout_width="96dp"
         android:layout_height="96dp"

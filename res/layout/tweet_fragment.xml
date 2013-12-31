@@ -16,6 +16,9 @@ to someones status. This is the only time that the keyboard will be dropped, but
 Please consider that before you choose to edit this one, and again, IF YOU DO NOT EDIT THIS LAYOUT, PLEASE
 REMOVE IT FROM THE PROJECT. This can be done by simply right clicking and selecting "delete".
 
+
+REQUIRED ELEMENTS:
+
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

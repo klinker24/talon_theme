@@ -21,7 +21,7 @@ This XML is used anywhere a user is shown, such as in the favorite users activit
 when searching for a user in the compose activity
 
 
-REQUIRED CONTENT:
+REQUIRED ELEMENTS:
 
 1.) ImageView (profile_pic) - holds the users profile picture
 2.) LinearLayout (background) - Holds the content of the person (name and screenname). This is where you should apply
@@ -59,7 +59,7 @@ REQUIRED CONTENT:
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/no_dialog_unselected"
+        android:background="@drawable/timeline_background"
         android:layout_marginLeft="-10dp">
 
         <!-- Holds the name and screen name-->

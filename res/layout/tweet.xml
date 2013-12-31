@@ -25,7 +25,7 @@ Remember that you have lots of color choices for the fonts too. Any hexadecimal 
 you can define more in the colors xml file or just hard-code them into here
 
 
-REQUIRED CONTENT:
+REQUIRED ELEMENTS:
 
 1.) ImageView (profile_pic) - Holds the profile picture for the user
 2.) LinearLayout (background) - Holds the content of the tweet (name, time, text, ect). This should

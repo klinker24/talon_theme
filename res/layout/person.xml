@@ -21,7 +21,7 @@ This XML is used anywhere a user is shown, such as in the favorite users activit
 when searching for a user in the compose activity
 
 
-REQUIRED ELEMENTS:
+REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you want):
 
 1.) ImageView (profile_pic) - holds the users profile picture
 2.) LinearLayout (background) - Holds the content of the person (name and screenname). This is where you should apply

@@ -17,7 +17,41 @@ Please consider that before you choose to edit this one, and again, IF YOU DO NO
 REMOVE IT FROM THE PROJECT. This can be done by simply right clicking and selecting "delete".
 
 
-REQUIRED ELEMENTS:
+REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you want):
+
+*** Some of these elements are in the contact_info xml and the tweet_for_fragment xml so it is more organized ***
+1.) ImageView (profile_pic) - Holds the profile picture
+2.) TextView (name) - Holds the users name
+3.) TextView (screen_name) - Holds the users twitter handle
+4.) TextView (tweet) - Holds the text of the tweet
+5.) TextView (retweeter) - Holds the "retweeted by @... " AND the " via ..." (if it is available)
+6.) LinearLayout (linLayout) - Mine holds most of the tweet info (tweet, retweeter, time, ect...
+                        you can check the code below). This is the portion that expands and contracts
+                        when the user touches the expand button. I suppose you could just not put anything
+                        in it if you don't want this expansion functionality though.
+7.) ImageButton (expand) - The button that is pressed to expand the image
+8.) ImageButton (favorite) - The button pressed to favorite a status (remember that I will change the
+                        src for this image in code if the user has favorited it, but only the unfavorited icon
+                        is available to use here - so be aware of that before changing it drastically)
+9.) ImageButton (retweet) - Button pressed to retweet a status (you CAN change the src for this one
+                        without worrying about me changing it)
+10.) TextView (fav_count) - Holds the number of favorites for that status
+11.) TextView (retweet_count) - Holds the number of retweets for that status
+12.) EditText (reply) - The reply text box for the user to enter the reply
+13.) ImageButton (reply_button) - Button to send the reply
+14.) ImageButton (attach_button) - Button to attach an image. I have it hidden in the overflow menu
+15.) Button (at_button) - Button to open the dialog to find a user. I have it hidden in the overflow menu
+16.) ImageButton (overflow_button) - Button to open the overflow menu. It will fly in from the left of the screen
+17.) LinearLayout (buttons) - This is the layout that flies in when you press the overflow button.
+                        It holds the at and attach buttons. If you don't want to use it though, just don't put
+                        anything in it and set the visibility of the overflow button to gone.
+                        Don't try changing the visibility of this element though, just make it so you can't access it.
+18.) TextView (char_remaining) - Holds the number of characters left on the tweet. You CAN change the text size here
+                        if you want.
+19.) TextView (time) - Holds the time of the tweet. Real time, not the "time ago"
+20.) ImageView (imageView) - Holds the picture that is attached to the tweet if there is one
+21.) ImageView (attach) - Holds the image that is attached to your reply, if there is one. Only becomes
+                        visible if the user presses the attach button
 
 -->
 

@@ -7,6 +7,20 @@ This is the default layout for the header on the profiles listviews.
 Please note that the tweets, followers, and following text will be changed in my code
 so that it translates correctly. They are just in there now as placeholders.
 
+
+REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you want):
+
+1.) ProgressBar (spinner) - I put this right on top of the profile picture, but you can do whatever
+                    with it. You could make it horizontal by adding this attribute:
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+2.) Button (tweets) - button that shows the user's tweets
+3.) Button (followers) - button that shows the user's followers
+4.) Button (following) - button that shows who the user is following
+5.) ImageView (background_image) - Holds the users background image
+6.) ImageView (profile_pic) - Holds the users profile picture
+7.) TextView (user_statement) - Holds the user description
+8.) TextView (username) - Holds the users twitter handle
+
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"

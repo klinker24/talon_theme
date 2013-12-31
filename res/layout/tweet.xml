@@ -24,6 +24,45 @@ I really like to make things stick out with bold and such, but it is up to you h
 Remember that you have lots of color choices for the fonts too. Any hexadecimal color will work,
 you can define more in the colors xml file or just hard-code them into here
 
+
+REQUIRED CONTENT:
+
+1.) ImageView (profile_pic) - Holds the profile picture for the user
+2.) LinearLayout (background) - Holds the content of the tweet (name, time, text, ect). This should
+                 be where the background image should be applied. It should also be the portion that
+                 expands and contracts when the user long clicks the tweet (or regular clicks,
+                 depending on the settings). You can do whatever you want with this as long as it
+                 follows those guidelines
+3.) TextView (name) - Holds the users real name (or twitter handle if they select that setting)
+4.) TextView (time) - Holds the "time ago" for the tweet
+5.) TextView (tweet) - Holds the actual text of the tweet. set height to wrap_content because you never
+                 know how long a tweet will be.
+6.) TextView (retweeter) - Holds the "retweeted by: @..." text if the tweet is a retweet. You shouldn't
+                 mess with the visibility on this one because I change it in code.
+7.) ImageView (image) - Holds the picture that is attached to the tweet (if there is one), or the YouTube
+                 thumbnail. I have it set up to only show a clip of that image right now. All of that
+                 manipulation is done from the xml here though, so change it to however you want it
+                 to display.
+8.) ImageView (play_button) - Don't mess with this to much, the only thing you should really have to do
+                 is make sure it is centered over the image. Its visibility is changed in code whenever
+                 there is a YouTube thumbnail on the tweet.
+9.) LinearLayout (expansion) - This is the layout that expands on the tweet when it is long clicked (or
+                 clicked, depending on the setting). You will want to watch out for the bottom margin. Make
+                 sure if you change this expansion you also change that negative margin or the animation will
+                 be jumpy. In theory, this doesnt have to be at the bottom either, it should be able to expand
+                 from anywhere on the tweet... but that is untested.
+
+*** these next elements are inside of the expansion, and that is where they should stay because they aren't ***
+*** set up until the user opens the expansion to reduce the load when scrolling through the timeline ***
+10.) ImageButton (favorite) - Button pressed to favorite the tweet
+11.) TextView (fav_count) - Displays the number of favorites on that tweet
+12.) ImageButton (retweet) - Button pressed to retweet a status
+13.) TextView (retweet_count) - Displays the number of retweets on a status
+14.) EditText (reply) - This is where the user types the reply to a status
+15.) TextView (char_count) - Displays the number of characters availible for the tweet (max of 140)
+                 You can change the text size here. This is one of the only places I don't do it in code
+16.) ImageButton (reply_button) - Button to send the reply to the status
+
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="horizontal"

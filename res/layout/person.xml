@@ -85,7 +85,7 @@ REQUIRED ELEMENTS:
                 android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
                 android:textColor="@color/dateColor"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="5dp" />
 
         </RelativeLayout>
 

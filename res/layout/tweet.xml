@@ -68,6 +68,8 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:paddingLeft="6dp"
+              android:paddingRight="6dp"
               android:paddingTop="5dp"> <!-- This padding is what you should change for your list views dividers. It can be zero. -->
 
     <LinearLayout

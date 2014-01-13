@@ -51,17 +51,19 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                  sure if you change this expansion you also change that negative margin or the animation will
                  be jumpy. In theory, this doesnt have to be at the bottom either, it should be able to expand
                  from anywhere on the tweet... but that is untested.
+10.) TextView (screenname) - Displays the screen name if the user has both handle and name selected under theme
+                 settings. Keep the visibility at gone for this one.
 
 *** these next elements are inside of the expansion, and that is where they should stay because they aren't ***
 *** set up until the user opens the expansion to reduce the load when scrolling through the timeline ***
-10.) ImageButton (favorite) - Button pressed to favorite the tweet
-11.) TextView (fav_count) - Displays the number of favorites on that tweet
-12.) ImageButton (retweet) - Button pressed to retweet a status
-13.) TextView (retweet_count) - Displays the number of retweets on a status
-14.) EditText (reply) - This is where the user types the reply to a status
-15.) TextView (char_count) - Displays the number of characters availible for the tweet (max of 140)
+11.) ImageButton (favorite) - Button pressed to favorite the tweet
+12.) TextView (fav_count) - Displays the number of favorites on that tweet
+13.) ImageButton (retweet) - Button pressed to retweet a status
+14.) TextView (retweet_count) - Displays the number of retweets on a status
+15.) EditText (reply) - This is where the user types the reply to a status
+16.) TextView (char_count) - Displays the number of characters availible for the tweet (max of 140)
                  You can change the text size here. This is one of the only places I don't do it in code
-16.) ImageButton (reply_button) - Button to send the reply to the status
+17.) ImageButton (reply_button) - Button to send the reply to the status
 
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -116,6 +118,16 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                     android:layout_alignParentTop="true"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/screenname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dateColor"
+                android:visibility="gone"/>
+
             <TextView
                     android:id="@+id/time"
                     android:layout_height="wrap_content"
@@ -132,7 +144,8 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                     android:id="@+id/tweet"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:layout_below="@+id/name"
+                    android:layout_below="@+id/screenname"
+                    android:paddingTop="3dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="16dp"
                     android:fontFamily="sans-serif-light"

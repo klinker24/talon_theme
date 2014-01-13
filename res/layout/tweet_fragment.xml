@@ -40,7 +40,7 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
 12.) EditText (reply) - The reply text box for the user to enter the reply
 13.) ImageButton (reply_button) - Button to send the reply
 14.) ImageButton (attach_button) - Button to attach an image. I have it hidden in the overflow menu
-15.) Button (at_button) - Button to open the dialog to find a user. I have it hidden in the overflow menu
+15.) ImageButton (at_button) - Button to open the dialog to find a user. I have it hidden in the overflow menu
 16.) ImageButton (overflow_button) - Button to open the overflow menu. It will fly in from the left of the screen
 17.) LinearLayout (buttons) - This is the layout that flies in when you press the overflow button.
                         It holds the at and attach buttons. If you don't want to use it though, just don't put
@@ -152,13 +152,12 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
         android:layout_marginBottom="10dp"
         android:visibility="gone">
 
-        <Button
+        <ImageButton
             android:id="@+id/at_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/pressed_button"
-            android:text="\@"
-            android:textSize="30dp"
+            android:src="@drawable/mentions_light"
             android:gravity="center"
             android:layout_gravity="center"
             android:textColor="#807f7f" />

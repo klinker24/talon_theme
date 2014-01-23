@@ -50,6 +50,7 @@ limitations under the License.
         <meta-data android:name="talon_theme_base"
                    android:value="light" />
 
+        <!-- change the string to change the accent color for the theme -->
         <meta-data android:name="talon_theme_accent_color"
                    android:value="@string/accent_color" />
 

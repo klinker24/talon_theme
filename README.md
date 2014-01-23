@@ -10,6 +10,7 @@ This theme is just an example of what you can do with the theme engine for Talon
 <li>Add nine-patch resources for the different background types (selected and unselected) and any other icons that you wish to change</li>
 <li>Edit the layout xml filse to match how you want them to look. You can basically do whatever you want here as long as you don't remove any of the components I have. I have made some comments on some that you should be aware of</li>
 <li>Edit the text colors defined in the colors resource file</li>
+<li>Add the EditText background of your choosing. If one isn't found in your theme, it will default to holo orange. I would suggest looking here to get them: http://android-holo-colors.com/</li>
 <li>Compile the app and install it on your phone</li>
 <li>Set the theme in the Theme Settings section of Talon</li>
 <li>Fix any problems with the theme and make it look perfect</li>
@@ -26,7 +27,7 @@ This theme is just an example of what you can do with the theme engine for Talon
 
 Don't hesitate to contact me if you have any questions!
 
-Email: klinkerapps@gmail.com
+Email: luke@klinkerapps.com
 
 ---
 

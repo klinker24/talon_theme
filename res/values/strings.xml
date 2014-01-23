@@ -23,4 +23,8 @@ limitations under the License.
     <!-- the background color for the conversations, this is what shows behind the messages -->
     <string name="background_color">#dddddd</string>
 
+    <!-- accent color for the app. will replace the orange whereever possible -->
+    <!-- this is holo blue -->
+    <string name="accent_color">#33B5E5</string>
+
 </resources>

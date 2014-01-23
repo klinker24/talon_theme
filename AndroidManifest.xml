@@ -50,6 +50,9 @@ limitations under the License.
         <meta-data android:name="talon_theme_base"
                    android:value="light" />
 
+        <meta-data android:name="talon_theme_accent_color"
+                   android:value="@string/accent_color" />
+
     </application>
 </manifest>
 

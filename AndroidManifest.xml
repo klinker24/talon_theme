@@ -16,7 +16,7 @@ limitations under the License.
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.klinker.android.talon_theme"
+          package="com.klinker.android.hool_theme"
           android:versionCode="1"
           android:versionName="1.00">
 
@@ -34,7 +34,7 @@ limitations under the License.
         <!-- Can be true or false, true means that user pictures will be round -->
         <!-- false means that contact pictures will be square-->
         <meta-data android:name="talon_theme_round_contact_pictures"
-                   android:value="false" />
+                   android:value="true" />
 
         <!-- Needs to be a string resource that defines a color in hex, set the background color of the message screen -->
         <meta-data android:name="talon_theme_background_color"
@@ -48,7 +48,7 @@ limitations under the License.
 
         <!-- Can be light, dark, or black, which defines the base theme you are building off of -->
         <meta-data android:name="talon_theme_base"
-                   android:value="light" />
+                   android:value ="negro"/>
 
         <!-- change the string to change the accent color for the theme -->
         <meta-data android:name="talon_theme_accent_color"

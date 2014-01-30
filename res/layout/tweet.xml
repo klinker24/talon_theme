@@ -64,6 +64,8 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
 16.) TextView (char_count) - Displays the number of characters availible for the tweet (max of 140)
                  You can change the text size here. This is one of the only places I don't do it in code
 17.) ImageButton (reply_button) - Button to send the reply to the status
+18.) ImageButton (share_button) - button the user presses to share the tweet inline
+19.) ImageButton (quote_button) - Opens the dialog compose with the quote inserted
 
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -212,6 +214,28 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                     android:layout_height="wrap_content"
                     android:paddingRight="3dp"
                     android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/quote_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_action_reply_all_light"
+                    android:minHeight="32dp" android:minWidth="32dp"
+                    android:scaleType="fitCenter" android:adjustViewBounds="true"
+                    android:maxWidth="32dp" android:maxHeight="32dp"
+                    android:background="@drawable/pressed_button"
+                    android:layout_marginLeft="8dp" />
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_action_share_light"
+                    android:minHeight="32dp" android:minWidth="32dp"
+                    android:scaleType="fitCenter" android:adjustViewBounds="true"
+                    android:maxWidth="32dp" android:maxHeight="32dp"
+                    android:background="@drawable/pressed_button"
+                    android:layout_marginLeft="8dp" />
 
                 <ImageButton
                         android:id="@+id/favorite"

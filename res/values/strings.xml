@@ -24,6 +24,7 @@ limitations under the License.
     <string name="background_color">#dddddd</string>
 
     <!-- accent color for the app. will replace the orange whereever possible -->
+    <!-- only use the #rrggbb color scheme, don't try putting an alpha color here -->
     <!-- this is holo blue -->
     <string name="accent_color">#33B5E5</string>
 

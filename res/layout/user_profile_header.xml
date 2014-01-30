@@ -20,6 +20,8 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
 6.) ImageView (profile_pic) - Holds the users profile picture
 7.) TextView (user_statement) - Holds the user description
 8.) TextView (username) - Holds the users twitter handle
+9.) TextView (verified_text) - Will be displayed if the user has been twitter verified. Leave the visibility
+                    set to false.
 
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -124,6 +126,25 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
         android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="-70dp" />
+
+    <!-- This one is pretty much up to you on how to do it. This will just create some shadowed text over
+         the users profile picture. If you wanted to add a drawable to the textview, you could (drawable_left)
+         You can also change the font size if you want, but I will change the text to "verified" no matter what
+         you put -->
+    <TextView
+        android:id="@+id/verified_text"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/profile_pic"
+        android:layout_alignLeft="@+id/profile_pic"
+        android:shadowColor="@android:color/black"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone" />
 
     <!-- you could maybe set this to be the actual bar instead of the spinner.
          in code I just make it indeterminate, so I suppose it would work. Experiment with it.

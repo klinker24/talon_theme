@@ -188,12 +188,16 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
             android:src="@drawable/ic_action_overflow_light"
             android:background="@drawable/pressed_button" />
 
+        <!-- you will want to set the textCursorDrawable to null if you are doing a light theme
+             this makes it so the cursor is black instead of white. If you are using a dark theme,
+             just delete that attribute -->
         <EditText
             android:id="@+id/reply"
             android:layout_height="match_parent"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_gravity="bottom"
+            android:textCursorDrawable="@null"
             android:textColor="@color/textColor"
             android:textColorHint="@color/dateColor"
             android:inputType="textMultiLine|textCapSentences"/>

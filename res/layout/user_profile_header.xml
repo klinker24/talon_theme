@@ -29,6 +29,14 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
               android:layout_height="match_parent"
               android:id="@+id/header" >
 
+    <!-- putting this view here as a placeholder will insure that all the devices get the header.
+         for some reason, some didn't get it. -->
+    <View
+        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:minHeight="140dp"
+        />
+
     <!-- this is the background image that will be effected if you change the
          meta-data for the constricting effect -->
     <ImageView

@@ -80,4 +80,8 @@ And just an FYI, dimen values aren't going to work, for some reason, they can't 
 So you will have to hard-code all the values. Also, changing the font sizes will do no good, as i set them according to the user's
 preference on the fly.
 
+
+I have added an action bar drawable that you can theme with the newest version (or coming soon). I would stay away from transparent ones.
+You will see why if you try it yourself. It isn't just me giving you design tips.
+
 -->

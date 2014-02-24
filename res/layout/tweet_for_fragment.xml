@@ -68,6 +68,17 @@ will work the exact same
                 android:layout_height="wrap_content"
                 android:paddingRight="3dp"
                 android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/view_retweeters"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_action_retweeters"
+                android:minHeight="32dp" android:minWidth="32dp"
+                android:scaleType="fitCenter" android:adjustViewBounds="true"
+                android:maxWidth="32dp" android:maxHeight="32dp"
+                android:background="@drawable/pressed_button"
+                android:layout_marginLeft="5dp" />
                 
                 <ImageButton
                     android:id="@+id/quote_button"

@@ -53,6 +53,7 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
 21.) ImageView (attach) - Holds the image that is attached to your reply, if there is one. Only becomes
                         visible if the user presses the attach button
 22.) ImageButton (quote_button) - will open up the compose window to quote the tweet.
+23.) ImageButton (view_retweeters) - will open up a new window to show all the users that retweeted that status
 
 -->
 

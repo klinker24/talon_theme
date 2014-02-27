@@ -59,7 +59,7 @@ limitations under the License.
 
 <!--
 
-PLEASE READ (Some themeing instructions):
+PLEASE READ (Some theming instructions):
 
 This is basically the Hangouts layout that is contained in Talon.
 
@@ -81,7 +81,7 @@ So you will have to hard-code all the values. Also, changing the font sizes will
 preference on the fly.
 
 
-I have added an action bar drawable that you can theme with the newest version (or coming soon). I would stay away from transparent ones.
-You will see why if you try it yourself. It isn't just me giving you design tips.
+I have added an action bar drawable that you can theme with the newest version of the app. You could do transparent if you would like
+but the drawer shadow makes things just a little bit weird and there is no way around it. You will see what I mean if you try it.
 
 -->

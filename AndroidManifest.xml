@@ -58,6 +58,7 @@ limitations under the License.
 
         <!-- The following attributes and their descriptions are unused in this theme, but they tell you
             about what can be done and some more of the functionality possible -->
+        <!-- These will work in version 2.6.2 of Talon or later -->
 
 
         <!-- forces both the users name and handle to be shown on the timeline listview, despite

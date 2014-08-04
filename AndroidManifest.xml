@@ -54,6 +54,32 @@ limitations under the License.
         <meta-data android:name="talon_theme_accent_color"
                    android:value="@string/accent_color" />
 
+
+
+        <!-- The following attributes and their descriptions are unused in this theme, but they tell you
+            about what can be done and some more of the functionality possible -->
+
+
+        <!-- forces both the users name and handle to be shown on the timeline listview, despite
+            the users preference. Can look better and make for a good effect -->
+        <!--<meta-data android:name="force_name_and_handle_on_tweet"
+                   android:value="true" />-->
+
+        <!-- The color for the title strip on any of the view pagers. The tweet viewer for example.
+            If none is provided, then it will default to the accent color provided above -->
+        <!--<meta-data android:name="pager_title_strip_color"
+                   android:value="@string/app_orange" /> -->
+
+        <!-- To be used if you want the image to override the profile pictures position on the tweet viewer.
+            So if you only want one image view, then use this. -->
+        <!--<meta-data android:name="tweet_pager_combine_pro_pic_and_image"
+                   android:value="true" />-->
+
+        <!-- if the user clicks the send button on the tweet viewer, instead of sending the tweet, it will open
+            the compose window to reply. Can make for a cleaner look -->
+        <!--<meta-data android:name="tweet_pager_send_to_compose_window"
+                   android:value="true" />-->
+
     </application>
 </manifest>
 

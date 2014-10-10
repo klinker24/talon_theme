@@ -28,6 +28,7 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                 the background.
 3.) TextView (name) - Will hold the real name of the user
 4.) TextView (screen_name) - Holds the twitter handle for the user
+5.) TextView (following) - Displays whether or not you are following that when viewing you followers from your profile
 
  -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -78,6 +79,20 @@ REQUIRED ELEMENTS (They MUST be included, but visibilities can be changed if you
                 android:textColor="@color/textColor"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="8dp"/>
+                
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dateColor"
+                android:textSize="11sp"
+                android:layout_toRightOf="@+id/name"
+                android:layout_alignBaseline="@+id/name"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                android:text="@string/following"
+                android:textAllCaps="true"
+                android:singleLine="true"/>
 
             <TextView
                 android:id="@+id/screen_name"
